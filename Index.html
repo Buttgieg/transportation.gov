@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casmir Landon Graphics Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #78d98f;
+            background-color: #78d98f;
+            color: #111101;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e67e22;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #ecf0f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #about img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #e67e22;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #portfolio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Partners Section */
+         #partners .partners-logos {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    #partners .partners-logos img {
+        max-width: 100px;
+        height: auto;
+    }
+
+        /* Contact Section */
+        #contact {
+            background-color: #ecf0f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1.1rem;
+        }
+
+        form button {
+            background-color: #e67e22;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #d35400;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #a0e4b0;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Lemon Green Color Theme */
+        .lemon-green {
+            color: #111101;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            form {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="Image/Cas.png" alt="Casmir Landon Graphics Logo" style="width: 150px; margin-bottom: 20px;">
+      <h1><strong>CHIDUBEM CASMIR</strong></h1>
+<nav>
+     <strong> <ul>
+          <li><a href="#about" class="lemon-green">About</a></li>
+          <li><a href="#portfolio" class="lemon-green">Portfolio</a></li>
+          <li><a href="#partners" class="lemon-green">Partners</a></li>
+          <li><a href="#contact" class="lemon-green">Contact</a></li>
+      </ul> </strong> 
+    </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="Image/chidubem.jpg" alt="Chidubem Casmir" />
+        <p>
+          I’m Chidubem Casmir, a professional Graphic Designer with over 6 years of experience in the design industry. Throughout my career, I have had the privilege of working with renowned global companies such as Apple Inc., Microsoft, and Workiva, where I helped develop compelling design solutions that elevate their brands and engage their audiences. I specialize in creating innovative, user-centric designs that are not only visually stunning but also strategically aligned with brand goals. Whether it's designing captivating brand identities, intuitive user interfaces, or engaging digital content, my mission is to craft designs that leave a lasting impact. As a designer, I believe in the power of collaboration. I work closely with my clients to understand their vision, values, and target audience, ensuring that every design solution is tailored to meet their unique needs. My approach combines creativity with functionality, making sure that each design is both aesthetically pleasing and user-friendly. I take pride in being a detail-oriented, solution-driven designer with a deep understanding of design principles. Over the years, I’ve honed my skills in various aspects of design, including UI/UX design, branding, and digital media, always striving for excellence in everything I create. If you’re looking for a dedicated designer who is passionate about bringing your ideas to life and helping your brand stand out, let’s connect. Together, we can create design solutions that make a real difference.
+      </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>WORKS DONE</h2>
+        <div class="portfolio-grid">
+            <!-- Placeholder Portfolio Items -->
+            <div class="portfolio-item">
+                <img src="Image/five.png" alt="Portfolio Item 1">
+                <div class="overlay">Project 1</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/nine.png" alt="Portfolio Item 2">
+                <div class="overlay">Project 2</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/nineten.png" alt="Portfolio Item 3">
+                <div class="overlay">Project 3</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="Image/one (1).png" alt="Portfolio Item 4">
+                <div class="overlay">Project 4</div>
+            </div>
+            <!-- Add more portfolio items up to 20 -->
+            <!-- Placeholder for 20 projects -->
+            <div class="portfolio-item">
+                <img src="Image/seven.png" alt="Portfolio Item 5">
+                <div class="overlay">Project 5</div>
+            </div>
+			<div class="portfolio-item">
+                <img src="Image/seventen.png" alt="Portfolio Item 5">
+                <div class="overlay">Project 5</div>
+            </div>
+			<div class="portfolio-item">
+                <img src="Image/sixten.png" alt="Portfolio Item 5">
+                <div class="overlay">Project 5</div>
+            </div>
+			<div class="portfolio-item">
+                <img src="Image/zero.png" alt="Portfolio Item 5">
+                <div class="overlay">Project 5</div>
+            </div>
+            <!-- Repeat for the remaining 15 items... -->
+        </div>
+    </section>
+
+    <!-- Partnering Companies Section -->
+    <section id="partners">
+    <h2 align="center">PARTNERS</h2>
+    <div class="partners-logos">
+        <img src="Image/Screenshot 2025-01-14 163014.png" alt="Apple Inc.">
+        <img src="Image/Screenshot 2025-01-14 163029.png" alt="Microsoft">
+        <img src="Image/Screenshot 2025-01-14 163058.png" alt="Workiva">
+        <img src="Image/Screenshot 2025-01-14 163038.png" alt="Attitude Homes">
+        <img src="Image/Screenshot 2025-01-14 163052.png" alt="Eagle Majdes">
+		<img src="Image/Screenshot 2025-01-14 163034.png" alt="Workiva">
+        <img src="Image/Screenshot 2025-01-14 164637.png" alt="Attitude Homes">
+		<img src="Image/Screenshot 2025-01-14 163046.png" alt="Attitude Homes">
+        <img src="Image/Screenshot 2025-01-14 163024.png" alt="Eagle Majdes">
+		
+		
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to discuss a project or have any inquiries, feel free to get in touch.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Casmir Landon Graphics. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional: Smooth Scroll for Anchor Links -->
+    <script>
+    // Your original smooth scroll code
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // New automatic scrolling code for partner logos
+    const partnersContainer = document.querySelector('.partners-logos');
+
+    function scrollPartners() {
+        if (partnersContainer.scrollLeft + partnersContainer.clientWidth >= partnersContainer.scrollWidth) {
+            partnersContainer.scrollLeft = 0;
+        } else {
+            partnersContainer.scrollLeft += 1; // Adjust scrolling speed here
+        }
+    }
+
+    // Set interval for scrolling
+    setInterval(scrollPartners, 20); // Scroll every 20ms (adjust for speed)
+</script>
+
+</body>
+</html>
